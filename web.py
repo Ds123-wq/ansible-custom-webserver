@@ -1,9 +1,6 @@
 - hosts: all
-  vars:
-    - mount_point: "/dvd"
-    - http_port: "8080"
-    - document_root: "/var/www/deepak"
-    
+  vars_files:
+    - vars.py
   tasks:
   - name: "create mountpoint"
     file:
