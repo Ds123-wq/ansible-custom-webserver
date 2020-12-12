@@ -56,4 +56,5 @@
     service:
       name: "httpd"
       state: restarted
+      enabled: yes
 
